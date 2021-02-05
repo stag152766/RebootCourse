@@ -11,23 +11,23 @@ public class MyArray {
 
 
     /*
-    добавление элемента в конец массива
+     * добавление элемента в конец массива
      */
-    public void add(int a) {
+    public void add(int value) {
         int[] temp = new int[array.length + 1];
 
         for (int i = 0; i < array.length; i++) {
             temp[i] = array[i];
         }
-        temp[array.length] = a;
+        temp[array.length] = value;
         this.array = temp;
-
+        print();
     }
 
     /*
-    добавление элемента в определенную позицию массива
+     * добавление элемента в определенную позицию массива
      */
-    public void add(int a, int index) {
+    public void add(int value, int index) {
         if (index > array.length) {
             System.out.println("ArrayIndexOutOfBoundsException");
         }
@@ -39,14 +39,15 @@ public class MyArray {
             } else {
                 temp[i + 1] = array[i];
             }
-            temp[index] = a;
+            temp[index] = value;
         }
         this.array = temp;
+        print();
     }
 
 
     /*
-    вывод количества элементов в массиве
+     * вывод количества элементов в массиве
      */
     public void getLength() {
         System.out.println(this.array.length);
@@ -54,41 +55,40 @@ public class MyArray {
 
 
     /*
-    вывод на экран всего массива
+     * вывод на экран всего массива
      */
-    public void printArray() {
+    public void print() {
         for (int i = 0; i < this.array.length; i++) {
             System.out.print(this.array[i] + " ");
-
         }
         System.out.println();
     }
 
     /*
-    удаление элемента массива по индексу
+     * удаление элемента массива по индексу
      */
     public void remove(int index) {
-        if (index > array.length){
+        if (index > array.length) {
             System.out.println("ArrayIndexOutOfBoundsException");
         }
         int[] temp = new int[array.length - 1];
 
         for (int i = 0; i < array.length; i++) {
-            if (i < index){
+            if (i < index) {
                 temp[i] = array[i];
-            }
-            else if (i < temp.length){
+            } else if (i < temp.length) {
                 temp[i] = array[i + 1];
             }
         }
         this.array = temp;
+        print();
     }
 
     /*
-    изменение значения по его индексу
+     * изменение значения по его индексу
      */
-    public void set(int a, int index) {
-        if (index > array.length){
+    public void set(int value, int index) {
+        if (index > array.length) {
             System.out.println("ArrayIndexOutOfBoundsException");
         }
         int[] temp = new int[array.length];
@@ -96,69 +96,60 @@ public class MyArray {
         for (int i = 0; i < array.length; i++) {
             temp[i] = array[i];
         }
-        temp[index] = a;
-
+        temp[index] = value;
         this.array = temp;
+        print();
     }
 
     /*
-   функция сортировки массива по возрастанию и убыванию без изменения исходного массива)
+     * функция сортировки массива по возрастанию без изменения исходного массива
      */
     public int[] sort() {
         int[] temp = array.clone();
-
-        for (int out = array.length - 1; out >= 1 ; out--) {
-
-            for (int in = 0; in < out; in ++){
-
-                if (temp[in] > temp[in + 1]){
-                    int tmp = temp[in];
-                    temp[in] = temp[in+1];
-                    temp[in+1] = tmp;
-                }
-            }
-        }
-
+        bubbleSort(temp);
         return temp;
     }
 
     /*
-       функция сортировки массива по убыванию без изменения исходного массива
-    */
-    public int[] sortReverseOrder() {
-        int[] temp = array.clone();
-
-        for (int i = 0; i < array.length; i++) {
-            temp[i] = -temp[i];
-        }
-
-        for (int out = array.length - 1; out >= 1 ; out--) {
-
-            for (int in = 0; in < out; in ++){
-
-                if (temp[in] > temp[in + 1]){
-                    int tmp = temp[in];
-                    temp[in] = temp[in+1];
-                    temp[in+1] = tmp;
-                }
-            }
-        }
-        for (int i = 0; i < array.length; i++) {
-            temp[i] = -temp[i];
-        }
-
-        return temp;
-    }
-
-
-    /*
-    функция вывода максимального элемента
+     * функция сортировки массива по убыванию без изменения исходного массива
      */
-    public void getMaxValue(){
+    public int[] reverse() {
+        int[] temp = array.clone();
+        changeToNegative(temp);
+        bubbleSort(temp);
+        changeToNegative(temp);
+        return temp;
+    }
+
+    private void changeToNegative(int[] temp) {
+        for (int i = 0; i < array.length; i++) {
+            temp[i] = -temp[i];
+        }
+    }
+
+    private void bubbleSort(int[] temp) {
+        for (int out = array.length - 1; out >= 1; out--) {
+
+            for (int in = 0; in < out; in++) {
+
+                if (temp[in] > temp[in + 1]) {
+                    int tmp = temp[in];
+                    temp[in] = temp[in + 1];
+                    temp[in + 1] = tmp;
+                }
+            }
+        }
+    }
+
+
+    /*
+     * функция вывода максимального элемента
+     */
+    public void getMaxValue() {
         int[] temp = array.clone();
         int max = Integer.MIN_VALUE;
         for (int i = 0; i < array.length; i++) {
-            if (temp[i] > max){
+            if (temp[i] > max) {
                 max = temp[i];
             }
         }
@@ -167,13 +158,13 @@ public class MyArray {
 
 
     /*
-    функция вывода минимального элемента
+     * функция вывода минимального элемента
      */
     public void getMinValue() {
         int[] temp = array.clone();
         int min = Integer.MAX_VALUE;
         for (int i = 0; i < array.length; i++) {
-            if (temp[i] < min){
+            if (temp[i] < min) {
                 min = temp[i];
             }
         }
@@ -182,14 +173,15 @@ public class MyArray {
 
 
     /*
-    функция заполнения массива одинаковыми элементами
+     * функция заполнения массива одинаковыми элементами
      */
-    public void setArray(int a) {
+    public void fill(int a) {
         int[] temp = new int[array.length];
         for (int i = 0; i < array.length; i++) {
             temp[i] = a;
         }
         this.array = temp;
+        print();
     }
 
 }

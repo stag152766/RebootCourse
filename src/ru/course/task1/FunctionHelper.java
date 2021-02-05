@@ -10,14 +10,23 @@ import java.util.*;
 
 public class FunctionHelper {
 
-    public void start(GasManager manager) throws IOException {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        String input = reader.readLine();
 
-
+    /*
+     * Получение информации по типу авто
+     */
+    public void start(GasManager manager) {
+        String input = "";
+        try {
+            BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+            input = reader.readLine();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        // поиск нужного типа авто
         List<Group> groups = manager.getGroups();
         for (Group group : groups) {
             if (group.getType().equals(input)) {
+                // вывод инфо на печать
                 getInfo(group);
             }
         }
@@ -25,22 +34,24 @@ public class FunctionHelper {
 
     }
 
-
-    public void getInfo(Group group) {
-
+    /*
+     * Функция которая в разрезе каждого типа авто выводит информацию о каждом авто
+     */
+    public String getInfo(Group group) {
+        String result = "";
         List<Vehicle> vehicles = group.getVehicles();
         Collections.sort(vehicles, Comparator.comparing(Vehicle::getDistance).thenComparing(Vehicle::getCapacity));
         for (Vehicle v : vehicles) {
-            System.out.print("Type: " + v.getClass().getSimpleName() + ", ");
-            System.out.print("Number: " + v.getNumber() + ", ");
-            System.out.print("Distance: " + v.getDistance());
+            result += "\nType: " + v.getClass().getSimpleName() + ", " +
+                    "Number: " + v.getNumber() + ", "+
+                    "Distance: " + v.getDistance();
             if (v.getCapacity() != 0) {
-                System.out.print(", Capacity: " + v.getCapacity());
+                result +=", Capacity: " + v.getCapacity();
             }
-            System.out.print("\n");
 
         }
-
+        System.out.println(result);
+        return result;
 
     }
 

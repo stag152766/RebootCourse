@@ -3,46 +3,164 @@
   <ID>JAVA</ID>
   <OriginalElement />
   <nodes>
-    <node x="0.0" y="159.0">ru.course.task1.FunctionHelper</node>
-    <node x="206.0" y="82.0">ru.course.task1.vehicles.Crane</node>
-    <node x="318.0" y="82.0">ru.course.task1.vehicles.Passangers</node>
-    <node x="180.0" y="236.0">ru.course.task1.Group</node>
-    <node x="112.00000000000001" y="82.0">ru.course.task1.vehicles.Car</node>
-    <node x="215.0" y="159.0">ru.course.task1.GasCalculator</node>
-    <node x="0.0" y="82.0">ru.course.task1.vehicles.Truck</node>
-    <node x="0.0" y="236.0">ru.course.task1.GasManager</node>
-    <node x="146.0" y="0.0">ru.course.task1.vehicles.Vehicle</node>
+    <node x="163.13685344827587" y="678.0">ru.course.task1.FunctionHelper</node>
+    <node x="478.95366379310343" y="416.0">ru.course.task1.vehicles.Crane</node>
+    <node x="104.50000000000006" y="416.0">ru.course.task1.vehicles.Passangers</node>
+    <node x="193.45366379310343" y="266.0">ru.course.task1.Group</node>
+    <node x="10.500000000000057" y="416.0">ru.course.task1.vehicles.Car</node>
+    <node x="254.46408045977012" y="760.0">ru.course.task1.GasCalculator</node>
+    <node x="366.95366379310343" y="416.0">ru.course.task1.vehicles.Truck</node>
+    <node x="278.1918103448276" y="528.0">ru.course.task1.GasManager</node>
+    <node x="213.81250000000006" y="0.0">ru.course.task1.vehicles.Vehicle</node>
   </nodes>
   <notes />
   <edges>
     <edge source="ru.course.task1.vehicles.Crane" target="ru.course.task1.vehicles.Vehicle">
-      <point x="0.0" y="-16.0" />
-      <point x="252.0" y="62.0" />
-      <point x="214.125" y="62.0" />
-      <point x="13.625" y="16.0" />
+      <point x="30.666666666666686" y="-16.0" />
+      <point x="555.6203304597701" y="396.0" />
+      <point x="553.2036637931035" y="396.0" />
+      <point x="553.2036637931035" y="196.0" />
+      <point x="376.31250000000006" y="196.0" />
+      <point x="71.5" y="83.0" />
+    </edge>
+    <edge source="ru.course.task1.vehicles.Vehicle" target="ru.course.task1.Group">
+      <point x="6.5" y="83.0" />
+      <point x="311.31250000000006" y="246.0" />
+      <point x="324.07866379310343" y="246.0" />
+      <point x="26.125" y="-50.0" />
+    </edge>
+    <edge source="ru.course.task1.GasManager" target="ru.course.task1.vehicles.Truck">
+      <point x="29.4375" y="-50.0" />
+      <point x="386.1293103448276" y="488.0" />
+      <point x="412.95366379310343" y="488.0" />
+      <point x="0.0" y="16.0" />
     </edge>
     <edge source="ru.course.task1.vehicles.Truck" target="ru.course.task1.vehicles.Vehicle">
       <point x="0.0" y="-16.0" />
-      <point x="46.0" y="52.0" />
-      <point x="159.625" y="52.0" />
-      <point x="-40.875" y="16.0" />
+      <point x="412.95366379310343" y="226.0" />
+      <point x="337.31250000000006" y="226.0" />
+      <point x="32.5" y="83.0" />
+    </edge>
+    <edge source="ru.course.task1.Group" target="ru.course.task1.vehicles.Vehicle">
+      <point x="-78.375" y="-50.0" />
+      <point x="219.57866379310343" y="236.0" />
+      <point x="285.31250000000006" y="236.0" />
+      <point x="-19.5" y="83.0" />
+    </edge>
+    <edge source="ru.course.task1.FunctionHelper" target="ru.course.task1.vehicles.Vehicle">
+      <point x="-56.66666666666666" y="-16.0" />
+      <point x="191.4701867816092" y="653.0" />
+      <point x="0.0" y="653.0" />
+      <point x="0.0" y="186.0" />
+      <point x="220.31250000000006" y="186.0" />
+      <point x="-84.5" y="83.0" />
+    </edge>
+    <edge source="ru.course.task1.vehicles.Crane" target="ru.course.task1.Group">
+      <point x="-30.66666666666667" y="-16.0" />
+      <point x="494.28699712643675" y="386.0" />
+      <point x="389.39116379310343" y="386.0" />
+      <point x="91.4375" y="50.0" />
+    </edge>
+    <edge source="ru.course.task1.GasCalculator" target="ru.course.task1.FunctionHelper">
+      <point x="-60.375" y="-28.0" />
+      <point x="274.5890804597701" y="735.0" />
+      <point x="205.63685344827587" y="735.0" />
+      <point x="-42.5" y="16.0" />
+    </edge>
+    <edge source="ru.course.task1.FunctionHelper" target="ru.course.task1.GasManager">
+      <point x="56.666666666666686" y="-16.0" />
+      <point x="-52.333333333333314" y="50.0" />
+    </edge>
+    <edge source="ru.course.task1.FunctionHelper" target="ru.course.task1.Group">
+      <point x="0.0" y="-16.0" />
+      <point x="248.13685344827587" y="653.0" />
+      <point x="264.03125000000006" y="653.0" />
+      <point x="264.03125000000006" y="396.0" />
+      <point x="258.76616379310343" y="396.0" />
+      <point x="-39.1875" y="50.0" />
     </edge>
     <edge source="ru.course.task1.vehicles.Passangers" target="ru.course.task1.vehicles.Vehicle">
       <point x="0.0" y="-16.0" />
-      <point x="385.5" y="52.0" />
-      <point x="241.375" y="52.0" />
-      <point x="40.875" y="16.0" />
+      <point x="172.00000000000006" y="386.0" />
+      <point x="156.10560344827587" y="386.0" />
+      <point x="156.10560344827587" y="226.0" />
+      <point x="272.31250000000006" y="226.0" />
+      <point x="-32.5" y="83.0" />
+    </edge>
+    <edge source="ru.course.task1.GasCalculator" target="ru.course.task1.GasManager">
+      <point x="20.125" y="-28.0" />
+      <point x="355.0890804597701" y="735.0" />
+      <point x="361.4640804597701" y="735.0" />
+      <point x="361.4640804597701" y="653.0" />
+      <point x="356.6918103448276" y="653.0" />
+      <point x="0.0" y="50.0" />
+    </edge>
+    <edge source="ru.course.task1.GasManager" target="ru.course.task1.vehicles.Crane">
+      <point x="49.0625" y="-50.0" />
+      <point x="405.7543103448276" y="498.0" />
+      <point x="524.9536637931035" y="498.0" />
+      <point x="0.0" y="16.0" />
+    </edge>
+    <edge source="ru.course.task1.vehicles.Car" target="ru.course.task1.Group">
+      <point x="24.666666666666657" y="-16.0" />
+      <point x="72.16666666666671" y="396.0" />
+      <point x="206.51616379310343" y="396.0" />
+      <point x="-91.4375" y="50.0" />
+    </edge>
+    <edge source="ru.course.task1.GasManager" target="ru.course.task1.vehicles.Passangers">
+      <point x="-49.0625" y="-50.0" />
+      <point x="307.6293103448276" y="498.0" />
+      <point x="172.00000000000006" y="498.0" />
+      <point x="0.0" y="16.0" />
+    </edge>
+    <edge source="ru.course.task1.GasManager" target="ru.course.task1.vehicles.Vehicle">
+      <point x="68.68749999999999" y="-50.0" />
+      <point x="425.3793103448276" y="508.0" />
+      <point x="581.4536637931035" y="508.0" />
+      <point x="581.4536637931035" y="186.0" />
+      <point x="389.31250000000006" y="186.0" />
+      <point x="84.5" y="83.0" />
+    </edge>
+    <edge source="ru.course.task1.GasManager" target="ru.course.task1.Group">
+      <point x="-9.8125" y="-50.0" />
+      <point x="346.8793103448276" y="478.0" />
+      <point x="325.67456896551727" y="478.0" />
+      <point x="325.67456896551727" y="396.0" />
+      <point x="311.01616379310343" y="396.0" />
+      <point x="13.0625" y="50.0" />
+    </edge>
+    <edge source="ru.course.task1.vehicles.Truck" target="ru.course.task1.Group">
+      <point x="-30.666666666666686" y="-16.0" />
+      <point x="382.28699712643675" y="396.0" />
+      <point x="363.26616379310343" y="396.0" />
+      <point x="65.3125" y="50.0" />
+    </edge>
+    <edge source="ru.course.task1.GasManager" target="ru.course.task1.vehicles.Car">
+      <point x="-68.6875" y="-50.0" />
+      <point x="288.0043103448276" y="508.0" />
+      <point x="47.50000000000006" y="508.0" />
+      <point x="0.0" y="16.0" />
+    </edge>
+    <edge source="ru.course.task1.vehicles.Passangers" target="ru.course.task1.Group">
+      <point x="45.0" y="-16.0" />
+      <point x="217.00000000000006" y="396.0" />
+      <point x="232.64116379310343" y="396.0" />
+      <point x="-65.3125" y="50.0" />
     </edge>
     <edge source="ru.course.task1.vehicles.Car" target="ru.course.task1.vehicles.Vehicle">
-      <point x="0.0" y="-16.0" />
-      <point x="149.0" y="62.0" />
-      <point x="186.875" y="62.0" />
-      <point x="-13.625" y="16.0" />
+      <point x="-24.666666666666686" y="-16.0" />
+      <point x="22.83333333333337" y="396.0" />
+      <point x="25.810344827586164" y="396.0" />
+      <point x="25.810344827586164" y="196.0" />
+      <point x="233.31250000000006" y="196.0" />
+      <point x="-71.5" y="83.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0" x="459.0" y="268.0" />
+  <settings layout="Hierarchic Group" zoom="1.0" x="789.5" y="323.0" />
   <SelectedNodes />
-  <Categories />
+  <Categories>
+    <Category>Fields</Category>
+  </Categories>
   <SCOPE>All</SCOPE>
   <VISIBILITY>private</VISIBILITY>
 </Diagram>

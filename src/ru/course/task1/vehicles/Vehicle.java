@@ -21,6 +21,9 @@ public abstract class Vehicle {
         this.number = number;
     }
 
+    /*
+     *  Расчет стоимости расходов по одному авто
+     */
     public double getCost(){
         return (distance / fuelConsumprion) * gasPrice;
     }
