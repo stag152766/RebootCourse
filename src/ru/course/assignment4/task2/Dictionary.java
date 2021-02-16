@@ -12,7 +12,7 @@ import java.util.regex.Pattern;
 
 public class Dictionary {
 
-    private static String sourseText = "Aaa bb c *&%@ !!1231ЯП";
+    private static String sourseText = "Aaa bb cqwertyuiopasdfghjklzxcvbnm,. *&%@ !!1231ЯП";
 
 
     public static void main(String[] args) {
@@ -39,7 +39,7 @@ public class Dictionary {
         }
     }
 
-    // всмпомогательный метод для очистки входного текста
+    // вспомогательный метод для очистки входного текста
     // остаются только символы латиницы
     private static String getLetters() {
         StringBuilder sb = new StringBuilder();
@@ -52,4 +52,6 @@ public class Dictionary {
         }
         return sb.toString();
     }
+
+    
 }
