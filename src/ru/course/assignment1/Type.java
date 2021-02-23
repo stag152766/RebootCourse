@@ -4,7 +4,7 @@ import ru.course.assignment1.transport.Vehicle;
 
 import java.util.ArrayList;
 import java.util.List;
-
+// Тип авто
 public class Type {
 
     private String code;

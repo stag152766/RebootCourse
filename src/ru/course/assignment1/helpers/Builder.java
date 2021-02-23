@@ -5,15 +5,13 @@ import ru.course.assignment1.*;
 import java.util.*;
 import ru.course.assignment1.transport.*;
 
-public class Creator {
-    java.util.List<String[]> textOut;
+public class Builder {
+    java.util.List<String[]> text;
     List<Type> types = new ArrayList<>();
 
-    public Creator(List<String[]> textOut) {
-        this.textOut = textOut;
+    public void setData(List<String[]> text) {
+        this.text = text;
     }
-
-
 
     /*
      * Создание всех типов авто
@@ -32,7 +30,7 @@ public class Creator {
     public void createVehicles() {
 
         // чтение параметров
-        for (String[] item : textOut) {
+        for (String[] item : text) {
             String code = item[1];
             String regNumber = item[2];
             double distance = Double.parseDouble(item[3]);
@@ -84,16 +82,16 @@ public class Creator {
         Vehicle vehicle = null;
         switch (code) {
             case ("100"):
-                vehicle = new Car(regNumber, distance);
+                vehicle = new Car(regNumber, distance, code);
                 break;
             case ("200"):
-                vehicle = new Truck(regNumber, distance, capacity);
+                vehicle = new Truck(regNumber, distance, capacity, code);
                 break;
             case ("300"):
-                vehicle = new Bus(regNumber, distance, capacity);
+                vehicle = new Bus(regNumber, distance, capacity,code);
                 break;
             case ("400"):
-                vehicle = new Crane(regNumber, distance, capacity);
+                vehicle = new Crane(regNumber, distance, capacity, code);
                 break;
         }
         return vehicle;

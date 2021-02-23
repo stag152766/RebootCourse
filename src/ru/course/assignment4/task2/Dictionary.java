@@ -12,7 +12,8 @@ import java.util.regex.Pattern;
 
 public class Dictionary {
 
-    private static String sourseText = "Aaa bb cqwertyuiopasdfghjklzxcvbnm,. *&%@ !!1231ЯП";
+   // private static String sourseText = "Aaa bb cqwertyuiopasdfghjklzxcvbnm,. *&%@ !!1231ЯП";
+    private static String sourseText = "koomonm";
 
 
     public static void main(String[] args) {
