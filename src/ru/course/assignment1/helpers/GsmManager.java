@@ -57,6 +57,7 @@ public class GsmManager {
 
         boolean next = true;
 
+        System.out.println("help - список команд");
         while (next) {
             System.out.print("Введите команду: ");
             String command = dataManager.readCommand();
@@ -67,7 +68,7 @@ public class GsmManager {
                     // заполнение списка авто - пробега
                     user.startShift();
                     // создание авто
-                    Object[] arr = ((Admin) user).getInputStream().toArray();
+                    Object[] arr = user.getInputStream().toArray();
                     workShift = Arrays.copyOf(arr, arr.length, String[].class);
                     build();
                     // назначение водителей
@@ -80,6 +81,7 @@ public class GsmManager {
                         // заполнение смены с консоли
                         calc();
                     }
+                    break;
                 }
                 // Завершить работу программы
                 case "exit": {
@@ -87,23 +89,36 @@ public class GsmManager {
                     break;
                 }
                 // Показать список архивных файлов смены
-                case "sf": {
+                case "ls": {
                     if (user instanceof Admin) {
                         ((Admin) user).showFiles();
                     }
+                    break;
                 }
-                // Вывод списка архивных файлов смен
-                case "pf": {
+                // Показать содержимое смены
+                case "os": {
                     if (user instanceof Admin) {
                         System.out.println("Введите путь до файла: ");
                         String path = dataManager.readCommand();
                         ((Admin) user).openFile(path);
 
                     }
+                    break;
                 }
                 // Вывод списка водителей
                 case "drivers": {
                     getDriversList();
+                    break;
+                }
+                case "help":{
+                    String commands = "start - начало смены\n" +
+                            "submit - конец смены\n" +
+                            "ps - итоговые результаты по смене\n" +
+                            "ls - список архивных смен\n" +
+                            "os - открыть смену\n" +
+                            "drivers - инфа о водителях\n" +
+                            "exit - выход";
+                    System.out.println(commands);
                 }
             }
         }
@@ -119,7 +134,7 @@ public class GsmManager {
         if (!map.isEmpty()) {
             for (Map.Entry<Vehicle, Integer> entry : map.entrySet()) {
                 Vehicle vehicle = entry.getKey();
-                String car = "C" + vehicle.getClass().getSimpleName() + "_"
+                String car = "C" + getCode(vehicle.getClass().getSimpleName()) + "_"
                         + vehicle.getRegNumber();
                 int driverID = entry.getValue();
                 int rate = 5;
@@ -129,6 +144,30 @@ public class GsmManager {
                         +" на автомобиле " + car);
             }
         }
+    }
+
+    private String getCode(String name) {
+        String code = "";
+        switch (name){
+            case "Car":{
+                code = "100";
+                break;
+            }
+            case "Truck":{
+                code = "200";
+                break;
+
+            }
+            case "Bus": {
+                code = "300";
+                break;
+            }
+            case "Crane": {
+                code = "400";
+                break;
+            }
+        }
+        return code;
     }
 
 
@@ -157,7 +196,8 @@ public class GsmManager {
             for (Map.Entry<Vehicle, Integer> entry : map.entrySet()) {
                 if (entry.getValue() == null) {
                     Vehicle vehicle = entry.getKey();
-                    String car = "C" + vehicle.getClass().getSimpleName() + "_" + vehicle.getRegNumber();
+                    String code = getCode(vehicle.getClass().getSimpleName());
+                    String car = "C" + code + "_" + vehicle.getRegNumber();
 
                     // запрос нового водителя
                     System.out.print("Укажите ID водителя для авто " + car + ": ");

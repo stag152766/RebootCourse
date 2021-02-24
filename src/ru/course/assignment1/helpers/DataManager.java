@@ -1,6 +1,11 @@
 package ru.course.assignment1.helpers;
 
 import java.io.*;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.*;
 import java.util.stream.Stream;
 
@@ -25,7 +30,7 @@ public class DataManager {
 
 
     /*
-     * Чтение типа авто из консоли
+     * Ввод с клавиатуры
      */
     public String readCommand() {
         String input = "";
@@ -39,14 +44,19 @@ public class DataManager {
     }
 
 
-
+    /*
+     * Запись смены и результатов в файл
+     */
 
     public void write(List<String> inputStream) {
         try {
-            String fileName = "data/test.txt";
+            DateTimeFormatter timeStampPattern = DateTimeFormatter.ofPattern("yyyyMMddHHmmss");
+            String dateTime = timeStampPattern.format(java.time.LocalDateTime.now());
+            String fileName = "data/test" + dateTime +".txt";
             fileWriter = new FileWriter(fileName);
             BufferedWriter writer = new BufferedWriter(fileWriter);
             System.out.println("Начало записи");
+            // построчная запись в файл
             for (String line : inputStream) {
                 writer.newLine();
                 writer.write(line);
@@ -67,7 +77,9 @@ public class DataManager {
         File[] arrFiles = dir.listFiles();
         List<File> lst = Arrays.asList(arrFiles);
         System.out.println("Список архивных смен: ");
-        System.out.println(lst);
+        for (File file : lst){
+            System.out.println(file);
+        }
     }
 
     /*

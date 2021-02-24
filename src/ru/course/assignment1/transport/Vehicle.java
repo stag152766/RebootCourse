@@ -7,7 +7,7 @@ public abstract class Vehicle {
     protected String regNumber;
     protected double distance;
     protected double capacity;
-    protected String code;
+
 
     public void addDistance(double value) {
         this.distance += value;

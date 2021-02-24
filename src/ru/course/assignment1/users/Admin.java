@@ -47,6 +47,9 @@ public class Admin implements User{
         return inputStream;
     }
 
+    /*
+     * Вывести список архивных файлов
+     */
     public void showFiles(){
         manager.openDir();
     }

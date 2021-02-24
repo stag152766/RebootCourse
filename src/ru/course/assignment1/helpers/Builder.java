@@ -82,16 +82,16 @@ public class Builder {
         Vehicle vehicle = null;
         switch (code) {
             case ("100"):
-                vehicle = new Car(regNumber, distance, code);
+                vehicle = new Car(regNumber, distance);
                 break;
             case ("200"):
-                vehicle = new Truck(regNumber, distance, capacity, code);
+                vehicle = new Truck(regNumber, distance, capacity);
                 break;
             case ("300"):
-                vehicle = new Bus(regNumber, distance, capacity,code);
+                vehicle = new Bus(regNumber, distance, capacity);
                 break;
             case ("400"):
-                vehicle = new Crane(regNumber, distance, capacity, code);
+                vehicle = new Crane(regNumber, distance, capacity);
                 break;
         }
         return vehicle;
