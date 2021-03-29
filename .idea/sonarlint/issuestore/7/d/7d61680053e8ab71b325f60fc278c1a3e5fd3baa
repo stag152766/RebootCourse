@@ -1,0 +1,51 @@
+
+C
+java:S1199C"-Extract this nested code block into a method.(˜Õ†Œ
+N	java:S106e"9Replace this use of System.out or System.err by a logger.(‡ÒÏý
+I
+java:S1199œ"-Extract this nested code block into a method.(‹Ò•üÿÿÿÿÿ
+H
+java:S1199W"-Extract this nested code block into a method.(´—øÒÿÿÿÿÿ
+8
+java:S1643Ý"Use a StringBuilder instead.(¹’†Žýÿÿÿÿ
+T	java:S106û"9Replace this use of System.out or System.err by a logger.(ùêÇÛÿÿÿÿÿ
+O	java:S106›"9Replace this use of System.out or System.err by a logger.(ê¶Ý¦
+O	java:S106ç"9Replace this use of System.out or System.err by a logger.(Å‰éº
+T	java:S106æ"9Replace this use of System.out or System.err by a logger.(®ýáëûÿÿÿÿ
+S	java:S106<"9Replace this use of System.out or System.err by a logger.(ÊÒæŠüÿÿÿÿ
+B
+java:S1199q"-Extract this nested code block into a method.(®ÆÏ)
+O	java:S106Ž"9Replace this use of System.out or System.err by a logger.(Ç„Å¦
+O
+java:S1117ø"8Rename "user" which hides the field declared at line 17.(Ü¥½¬
+B
+java:S1199c"-Extract this nested code block into a method.(ßÐžV
+T	java:S106"9Replace this use of System.out or System.err by a logger.(¾…¼Ôþÿÿÿÿ
+<	java:S131A""Add a default case to this switch.(¸ìù«üÿÿÿÿ
+I
+java:S1199¡"-Extract this nested code block into a method.(ØÝžíùÿÿÿÿ
+I
+java:S1199¥"-Extract this nested code block into a method.(éˆÏøüÿÿÿÿ
+H
+java:S1199\"-Extract this nested code block into a method.(äÙõžüÿÿÿÿ
+3
+java:S1643á"Use a StringBuilder instead.(ù²“¢
+n
+java:S3776³"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(ä£Œ›þÿÿÿÿ
+C
+java:S1199m"-Extract this nested code block into a method.(ÿÁÈ
+=	java:S131—""Add a default case to this switch.(àÐŠ¹ýÿÿÿÿ
+O	java:S106ê"9Replace this use of System.out or System.err by a logger.(ÎÁ²
+H
+java:S1199O"-Extract this nested code block into a method.(Ùµóåûÿÿÿÿ
+T	java:S106í"9Replace this use of System.out or System.err by a logger.(è¡›Åøÿÿÿÿ
+S	java:S106y"9Replace this use of System.out or System.err by a logger.(´ýêÿÿÿÿÿ
+S
+java:S1854×"<Remove this useless assignment to local variable "vehicles".(Ÿ¤šˆ
+N	java:S106>"9Replace this use of System.out or System.err by a logger.(Ô™ÓÐ
+T	java:S106é"9Replace this use of System.out or System.err by a logger.(œó™ãûÿÿÿÿ
+F
+java:S5411ú"*Use the primitive boolean expression here.(þóêÖÿÿÿÿÿ
+T	java:S106Ë"9Replace this use of System.out or System.err by a logger.(×ýû»úÿÿÿÿ
+C
+java:S1199˜"-Extract this nested code block into a method.(€„÷

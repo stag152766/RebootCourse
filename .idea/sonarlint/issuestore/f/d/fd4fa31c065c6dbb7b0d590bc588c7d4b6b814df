@@ -1,0 +1,10 @@
+
+œ
+java:S1186&"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(áÓ¨„ùÿÿÿÿ
+`
+java:S1301"KReplace this "switch" statement by "if" statements to increase readability.(©Ó¸b
+S	java:S106"9Replace this use of System.out or System.err by a logger.(•»Ã±ûÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(’ž†ò
+S	java:S106"9Replace this use of System.out or System.err by a logger.(„Ž‰ˆùÿÿÿÿ
+C
+java:S1199"-Extract this nested code block into a method.(íáñ®

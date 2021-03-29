@@ -1,0 +1,16 @@
+
+N	java:S106"9Replace this use of System.out or System.err by a logger.(’†ò
+S	java:S106"9Replace this use of System.out or System.err by a logger.(„‰ˆùÿÿÿÿ
+E
+java:S1128
+"*Remove this unused import 'java.util.Map'.(¼è½Òşÿÿÿÿ
+C
+java:S1199!"-Extract this nested code block into a method.(íáñ®
+Z
+java:S1128"DRemove this unused import 'ru.course.assignment1.transport.Vehicle'.(¢›
+N	java:S106""9Replace this use of System.out or System.err by a logger.(å±‚Œ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(•»Ã±ûÿÿÿÿ
+`
+java:S1301 "KReplace this "switch" statement by "if" statements to increase readability.(©Ó¸b
+I
+java:S1128".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ

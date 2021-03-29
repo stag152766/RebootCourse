@@ -1,0 +1,23 @@
+
+:
+java:S2119p"Save and re-use this "Random".(¼İÅf8ÍëÑÏ„/
+U	java:S106E"9Replace this use of System.out or System.err by a logger.(Ó«Ä8ÍëÑÏ„/
+E
+java:S1604"(Make this anonymous inner class a lambda(¼×¨™8ÍëÑÏ„/
+]	java:S125U"<This block of commented-out lines of code should be removed.(Ø§Õ°ùÿÿÿÿ8ÍëÑÏ„/
+J
+java:S1604 "(Make this anonymous inner class a lambda(ôâ…Æşÿÿÿÿ8ÍëÑÏ„/
+U	java:S106C"9Replace this use of System.out or System.err by a logger.(é˜™¦8ÍëÑÏ„/
+c
+java:S2142%"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8ÍëÑÏ„/
+U	java:S1065"9Replace this use of System.out or System.err by a logger.(˜ÿµà8ÍëÑÏ„/
+D
+java:S2189S""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8ÍëÑÏ„/
+U	java:S106e"9Replace this use of System.out or System.err by a logger.(õû‘Ì8ÍëÑÏ„/
+U	java:S106b"9Replace this use of System.out or System.err by a logger.(°åä8ÍëÑÏ„/
+“
+java:S1130"wRemove the declaration of thrown exception 'java.lang.InterruptedException', as it cannot be thrown from method's body.(º™Ú78ÍëÑÏ„/
+D
+java:S21893""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8ÍëÑÏ„/
+c
+java:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8ÍëÑÏ„/

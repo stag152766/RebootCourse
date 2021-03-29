@@ -1,0 +1,22 @@
+
+K
+java:S1128"0Remove this unused import 'java.time.LocalDate'.(›‘¬èıÿÿÿÿ
+g
+java:S20959"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(Áø’ûÿÿÿÿ
+N	java:S106:"9Replace this use of System.out or System.err by a logger.(½ø‘Ø
+M
+java:S1128"7Remove this unused import 'java.text.SimpleDateFormat'.(ú¡ÙÛ
+M	java:S106A"9Replace this use of System.out or System.err by a logger.(ı™í
+M	java:S106^"9Replace this use of System.out or System.err by a logger.(ìÇ†#
+g
+java:S2095["LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(™¹ëÕûÿÿÿÿ
+O
+java:S1128"4Remove this unused import 'java.time.LocalDateTime'.(æÃ§ƒüÿÿÿÿ
+W
+java:S1075K"ARefactor your code to get this URI from a customizable parameter.(İÂê—
+\
+java:S3959^"GRefactor this code so that this consumed stream pipeline is not reused.(ìÇ†#
+N	java:S106Q"9Replace this use of System.out or System.err by a logger.(ëê†•
+G
+java:S1128"1Remove this unused import 'java.text.DateFormat'.(÷Œá¼
+S	java:S106O"9Replace this use of System.out or System.err by a logger.(Ø¼á’ûÿÿÿÿ
